@@ -27,106 +27,7 @@
 
   <style>
 
-    
-/* Container styles */
-body {
-  /* background-color: #2F2F2F; */
-  color: #333;
-  /* font-family: 'Lato'; */
-}
-
-.container {
-  /* padding: 50px 0; */
-  /* text-align: center; */
-}
-
-.chart {
-  position: relative;
-  display: inline-block;
-  color: #999;
-  font-size: 20px;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-    width: 400px;
-  height: 400px;
   
-}
-
-
-/* END Container styles */
-
-/* Colors for the circles and positions for the graphics */
-
-
- svg .inner {
-  stroke: #256F8D;
-  fill: none;
-    stroke-width: 10;
-}
-
-.chart svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  z-index: 2;
-
-}
-
-#circle:after {
-  content: 'Fast';
-  position: absolute;
-   
-  opacity: 0;
-
-    border-right: 3px solid #F08418;
-    bottom: 25px;
-    left: -40px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
-    font-size: 20px;
-    color: rgb(46, 46, 46);
-    border-bottom: 3px solid #F08418;
-
-    -webkit-animation: see 2s;
-    animation: see 2s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;  
-
-}
-
-
-
-
-
-.chart figcaption {
-  width: calc(80% - 10px);
-  height: calc(80% - 10px);
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  left: calc( 50% - (80%/2) - -7px );
-  top: calc( 50% - (80%/2) - 13px);
-  -webkit-animation: see 1s;
-  animation: see 1s;
-}
-.chart figcaption h2{
-  font-family: arial;
-  font-weight: lighter;
-  font-size: 80px;
-  color:rgb(54, 54, 54);
-  margin-bottom: 10px;
-}
-
-
-
-
-
-
 .outer {
   fill: transparent;
   stroke: #F08418;
@@ -314,48 +215,90 @@ body {
         </div>
 
         <div class="skills-content">
-          <section class="container">
-
-            <!-- START - CIRCLE GRAPH -->
-            <div>
-              <figure class="chart" id="circle"data-percent="75">
-                <svg>
-                  <circle  class="inner"cx="1.5%" cy="52%" r="40%" transform="rotate(-90, 95, 95)"/>
-                  <circle class="outer" cx="1.5%" cy="52%" r="40%" transform="rotate(-90, 95, 95)"/>
-                </svg>
-      
-                <figcaption>
-                  <h2>34%</h2>
-                  <p>Fresh</p>
-                </figcaption>
-              </figure>
-            </div>
-            <!-- END - CIRCLE GRAPH -->
-          </section>
-          <!-- <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Fresh <i class="val">100%</i></span>
-            </div>
+          <div class="grid">
+            <section>
+              <h2>보다 빠르게! 보다 신선하게!</h2>
+              <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <circle class="circle-chart__circle" stroke="#F08418" stroke-width="2" stroke-dasharray="90" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <g class="circle-chart__info">
+                  <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">90%</text>
+                  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Fresh!</text>
+                </g>
+              </svg>
+            </section>
+          
+            <section>
+              <h2>독자적인 유통구조로 인한 가격 DOWN!</h2>
+              <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <circle class="circle-chart__circle circle-chart__circle--negative" stroke="#256F8D" stroke-width="2" stroke-dasharray="40,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <g class="circle-chart__info">
+                  <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">40%</text>
+                  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Low Price!</text>
+                </g>
+              </svg>
+            </section>
           </div>
 
-          <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Delivery  <i class="val">100%</i></span>
-            </div>
-          </div>
 
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">
-                Honest <i class="val">100%</i></span>
-            </div>
-          </div>
+          <style>
+            .skills-content h2{
+              font-size: 30px;
+              font-weight: 400;
+              font-family: 'Noto Sans KR';
+              text-align: center;
+              margin-bottom: 30px;
 
-          <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Price <i class="val">65%</i></span>
-            </div>
-          </div> -->
+            }
+            svg{
+              display: block;
+              margin: 0 auto;
+            }
+            .circle-chart__circle {
+              animation: circle-chart-fill 2s reverse; /* 1 */ 
+              transform: rotate(-90deg); /* 2, 3 */
+              transform-origin: center; /* 4 */
+            }
+
+            .circle-chart__circle--negative {
+              animation: circle-chart-fill 2s reverse; /* 1 */ 
+              transform: rotate(-90deg); /* 2, 3 */
+              transform-origin: center; /* 4 */
+            }
+
+            .circle-chart__info {
+              animation: circle-chart-appear 2s forwards;
+              opacity: 0;
+              transform: translateY(0.3em);
+            }
+
+            @keyframes circle-chart-fill {
+              to { stroke-dasharray: 0 100; }
+            }
+
+            @keyframes circle-chart-appear {
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            .grid {
+              display: grid;
+              grid-column-gap: 1em;
+              grid-row-gap: 1em;
+              grid-template-columns: repeat(1, 1fr);
+            }
+
+            @media (min-width: 31em) {
+              .grid {
+                grid-template-columns: repeat(2, 1fr);
+              }
+            }
+          </style>
+
+
 
         </div>
 
