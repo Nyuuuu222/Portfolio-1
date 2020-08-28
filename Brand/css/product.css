@@ -1,0 +1,94 @@
+.produc_img{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-image: initial;
+}
+.produc_img img{
+    max-width: 600px;
+    width: 100%;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+.detail_area{
+    text-align: left;
+    padding: 0px;
+}
+.product_name{
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: -1px;
+    color: #333;
+}
+.product_summery{
+    font-size: 14px;
+    color: #767676;
+    display: inline;
+}
+.border_bottom{
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee !important;
+}
+.price_area{
+    margin: 5px 0 0;
+    padding-bottom: 16px;
+    border: none;
+    padding: 10px 0px;
+    position: relative;
+}
+.price_detail{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 100000px;
+    box-sizing: border-box;
+    padding-inline-start: 40px;
+}
+.price_1{
+    width: 160px;
+    font-weight: 700;
+    display: table-cell;
+    vertical-align: middle;
+}
+.price_1 span{
+    font-weight: 400;
+}
+.price_2{
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 100000px;
+    box-sizing: border-box;
+}
+.sale_price{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.0em;
+    font-weight: 400;
+    color: #333;
+}
+.sale_price span{
+    font-weight: 700;
+}
+
+/* 배송 */
+
+.detail_spec_table{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.detail_spec_1{
+    width: 160px;
+    font-weight: 700;
+    display: table-cell;
+    vertical-align: middle;
+}

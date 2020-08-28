@@ -20,7 +20,7 @@
   <link href="css/owl.carousel.min.css" rel="stylesheet">
   <link href="css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/zoomslider.css">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
   <!-- Template Main CSS File -->
   <link href="css/css.css" rel="stylesheet">
 
@@ -30,19 +30,15 @@
 </head>
 
 <body>
+<!-- loading start -->
+<div class="loading">
+  <img src="img/loading2.svg" alt="">
+</div>
+<!-- loading end -->
 
     <div class="logo">
       <a href="#" class="logo_main"><img src="img/200.png" alt="logo"></a>
     </div>
-
-
-
-<!-- loading start -->
-  <div class="loading">
-    <img src="img/loading2.svg" alt="">
-  </div>
-<!-- loading end -->
-
 
 
   <!-- ======= Header ======= -->
@@ -60,49 +56,59 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" data-zs-src='["img/img1.jpg", "img/img2.jpg", "img/img6.jpg"]' class="d-flex align-items-center">
-    <!-- <div id="demo-1" data-zs-src='["img/img1.jpg", "img/img2.jpg", "img/img3.jpg"]' data-zs-overlay="dots"> -->
+  <section id="slideshow">
+    <div class="slider">
+        <div class="slide current">
+            <div class="content">
+                <h1>Healthy fruit</h1>
+                <p>"맛있는 과일을 찾기 위한 고민과 열정으로 최상의 농가를 찾아
+                    최고의 과일로 답하다"</p>
+            </div>
+        </div>
 
+        <div class="slide">
+            <div class="content">
+                <h1>Delicious fruit</h1>
+                <p>"맛있는 과일을 찾기 위한 고민과 열정으로 최상의 농가를 찾아
+                    최고의 과일로 답하다"</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <h1>Honest fruit</h1>
+                <p>"맛있는 과일을 찾기 위한 고민과 열정으로 최상의 농가를 찾아
+                    최고의 과일로 답하다"</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">Auto</label>
+    </div>
+
+    <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div> -->
+  </section>
+
+
+
+
+  <!-- <section id="hero" data-zs-src='["img/img1.jpg", "img/img2.jpg", "img/img6.jpg"]' class="d-flex align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
-
-      <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container main_txt">
           <h2 class="animate__animated animate__fadeInDown">Healthy <span>fruit</span></h2>
           <p class="animate__animated animate__fadeInUp">"맛있는 과일을 찾기 위한 고민과 열정으로 최상의 농가를 찾아<br>최고의 과일로 답하다"</p>
-          <!-- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a> -->
         </div>
       </div>
-
-            <!-- Slide 2 -->
-            <!-- <div class="carousel-item">
-              <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              </div>
-            </div> -->
-      
-            <!-- Slide 3 -->
-            <!-- <div class="carousel-item">
-              <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              </div>
-            </div> -->
-      
-            <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-      
-            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a> -->
-            
     </div>
-  </div>
-  </section><!-- End Hero -->
+  </section> -->
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -468,7 +474,6 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/aos.js"></script>
-
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
