@@ -43,7 +43,7 @@ $(window).scroll(function () {
 
 
 //   부드럽게 스크롤 맨 위로
-$( '.logo' ).click( function() {
+$( '.logo img' ).click( function() {
 	$( 'html, body' ).animate( { scrollTop : 0 }, 800 );
 	return false;
 } );
@@ -355,3 +355,16 @@ if(auto) {
 $('.often_click').click(function(){
     alert("감사합니다.^^")
 })
+
+// 상품구매
+$('#addCart').click(function(){
+    alert("장바구니에 담겼습니다.")
+  })
+
+
+// 결제하기
+$('.btn_ser').click(function(){
+    alert("결제되었습니다.")
+  })
+
+
