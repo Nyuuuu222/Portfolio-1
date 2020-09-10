@@ -13,7 +13,7 @@
 
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
 
-
+ 
 
 /* loading start */
 .loading {
@@ -259,14 +259,17 @@ color: #FFF;
 
 
 /* Background Images */
+#slideshow{
+  padding: 48px 0;
+}
 .slide:first-child {
-  background: url('../img/img1.jpg') no-repeat center center/cover;
+  background: url('../img/img1_2.jpg') no-repeat center center/cover;
 }
 .slide:nth-child(2) {
-  background: url('../img/img2.jpg') no-repeat center center/cover;
+  background: url('../img/img2_1.jpg') no-repeat center center/cover;
 }
 .slide:nth-child(3) {
-  background: url('../img/img6.jpg') no-repeat center center/cover ;
+  background: url('../img/img6_1.jpg') no-repeat center center/cover ;
 }
 /* .slide:nth-child(4) {
   background: url('https://drive.google.com/uc?id=1apx4Jkym-X8XvLvopVWEVtjKvvc9yhWq') no-repeat center center/cover;
@@ -892,13 +895,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our Services
+# Our Fruit_Market
 --------------------------------------------------------------*/
-.services {
+.Fruit_Market {
   padding-bottom: 20px;
 }
 
-.services .icon-box {
+.Fruit_Market .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -910,7 +913,7 @@ section {
   border: 1px solid #fff;
 }
 
-.services .icon {
+.Fruit_Market .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
   display: inline-block;
@@ -920,72 +923,72 @@ section {
   height: 72px;
 }
 
-.services .icon i {
+.Fruit_Market .icon i {
   font-size: 36px;
   line-height: 1;
 }
 
-.services .title {
+.Fruit_Market .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.Fruit_Market .title a {
   color: #111;
 }
 
-.services .description {
+.Fruit_Market .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
 
-.services .icon-box-pink .icon {
+.Fruit_Market .icon-box-pink .icon {
   background: #fceef3;
 }
 
-.services .icon-box-pink .icon i {
+.Fruit_Market .icon-box-pink .icon i {
   color: #ff689b;
 }
 
-.services .icon-box-pink:hover {
+.Fruit_Market .icon-box-pink:hover {
   border-color: #ff689b;
 }
 
-.services .icon-box-cyan .icon {
+.Fruit_Market .icon-box-cyan .icon {
   background: #e6fdfc;
 }
 
-.services .icon-box-cyan .icon i {
+.Fruit_Market .icon-box-cyan .icon i {
   color: #3fcdc7;
 }
 
-.services .icon-box-cyan:hover {
+.Fruit_Market .icon-box-cyan:hover {
   border-color: #3fcdc7;
 }
 
-.services .icon-box-green .icon {
+.Fruit_Market .icon-box-green .icon {
   background: #eafde7;
 }
 
-.services .icon-box-green .icon i {
+.Fruit_Market .icon-box-green .icon i {
   color: #41cf2e;
 }
 
-.services .icon-box-green:hover {
+.Fruit_Market .icon-box-green:hover {
   border-color: #41cf2e;
 }
 
-.services .icon-box-blue .icon {
+.Fruit_Market .icon-box-blue .icon {
   background: #e1eeff;
 }
 
-.services .icon-box-blue .icon i {
+.Fruit_Market .icon-box-blue .icon i {
   color: #2282ff;
 }
 
-.services .icon-box-blue:hover {
+.Fruit_Market .icon-box-blue:hover {
   border-color: #2282ff;
 }
 
