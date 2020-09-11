@@ -254,6 +254,7 @@ color: #FFF;
 .slide.current .content {
   transform: translateY(-300px);
 }
+
 }
 
 
@@ -2715,3 +2716,20 @@ section {
   font-weight: 350;
   margin-top: -16px;
 }
+
+
+@media screen and (max-width: 672px) {
+  .tab-wrapper{
+    flex-direction: column;
+  }
+}
+
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .tab-wrapper{
+        flex-direction: column;
+      }
+    }
